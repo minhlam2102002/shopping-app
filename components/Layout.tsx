@@ -1,6 +1,6 @@
 import React from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 import Footer from './Footer'
 import ScrollToTop from './ScrollToTop'
 
