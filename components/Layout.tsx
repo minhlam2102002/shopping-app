@@ -1,7 +1,7 @@
 import React from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 type LayoutProps = {
   children: React.ReactNode,
