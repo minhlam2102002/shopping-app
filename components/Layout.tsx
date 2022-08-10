@@ -10,9 +10,7 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <div className="layout">
-        <Navbar/>
-      </div>
+      <Navbar/>
       <main>{children}</main>
       <ScrollToTop/>
       <Footer />

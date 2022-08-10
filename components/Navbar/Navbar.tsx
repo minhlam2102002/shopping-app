@@ -11,19 +11,24 @@ import MenuOnShow from './MenuOnShow';
 
 export default function Navbar() {
   return (
-    <HideOnScroll>
-      <AppBar>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
-            <Logo display={{ xs: 'none', md: 'flex' }} />
-            <MenuOnHide/>
-            <Logo display={{ xs: 'flex', md: 'none' }} />
-            <MenuOnShow/>
-            <ExpandableSearch />
-            <UserMenu/>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </HideOnScroll>
+    <>
+      <Container>
+        <Toolbar></Toolbar>
+      </Container>
+      <HideOnScroll>
+        <AppBar>
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
+              <Logo display={{ xs: 'none', md: 'flex' }} />
+              <MenuOnHide/>
+              <Logo display={{ xs: 'flex', md: 'none' }} />
+              <MenuOnShow/>
+              <ExpandableSearch />
+              <UserMenu/>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      </HideOnScroll>
+    </>
   );
 };

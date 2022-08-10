@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-
+// import prisma from '../lib/prisma';
+// import { GetStaticProps } from 'next'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -80,3 +81,18 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+// export const getStaticProps: GetStaticProps = async () => {
+//   const feed = await prisma.post.findMany({
+//     where: { published: true },
+//     include: {
+//       author: {
+//         select: { name: true },
+//       },
+//     },
+//   });
+//   return {
+//     props: { feed },
+//     revalidate: 10,
+//   };
+// };
