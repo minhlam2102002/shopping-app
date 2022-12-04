@@ -25,6 +25,7 @@ export default function Navbar() {
               <MenuOnShow/>
               <ExpandableSearch />
               <UserMenu/>
+              
             </Toolbar>
           </Container>
         </AppBar>

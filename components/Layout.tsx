@@ -3,11 +3,11 @@ import Navbar from './Navbar/Navbar'
 import Footer from './Footer'
 import ScrollToTop from './ScrollToTop'
 
-type LayoutProps = {
+type Props = {
   children: React.ReactNode,
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: Props) {
   return (
     <>
       <Navbar/>
